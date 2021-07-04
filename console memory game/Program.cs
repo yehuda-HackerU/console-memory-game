@@ -19,7 +19,7 @@ namespace console_memory_game
 
                 while (true)
                 {
-                    if (Int32.TryParse(input.ToString(), out x) && x >= 1 && x <= max )
+                    if (Int32.TryParse(input.ToString(), out x) && x >= 1 && x <= max)
                     {
                         break;
                     }
@@ -51,7 +51,7 @@ namespace console_memory_game
                 {
                     Console.WriteLine($"You have selected {x}, {y} for 1st choice, try again :(.");
                 }
-                else if (table[y -1, x -1] == 0)
+                else if (table[y - 1, x - 1] == 0)
                 {
                     Console.WriteLine($"{x}, {y} is empty, try again.");
                 }
@@ -132,8 +132,6 @@ namespace console_memory_game
         }
 
 
-
-
         static void Main(string[] args)
         {
             char[] options = { '1', '2', '3' };
@@ -199,12 +197,10 @@ namespace console_memory_game
                 }
             }
 
-
+            Console.WriteLine("Press any key to close...");
             Console.ReadKey();
 
-
-
-
+            //by: t.me/yehuda100
         }
     }
 }
