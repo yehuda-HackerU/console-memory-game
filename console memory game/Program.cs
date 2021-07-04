@@ -195,6 +195,9 @@ namespace console_memory_game
                 {
                     player_1_turn = !player_1_turn;
                 }
+                Console.WriteLine($"Player {(player_1_turn ? "1" : "2")}, Press any key to play.");
+                Console.ReadKey();
+                Console.Clear();
             }
 
             Console.WriteLine("Press any key to close...");
